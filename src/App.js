@@ -1,11 +1,32 @@
 import Expenses from './components/Expenses';
 
 function App() {
- 
+  const expenses = [
+    {
+      title: "Education fees",
+      amount: 500.0,
+      date: new Date(2018, 11, 4),
+    },
+    {
+      title: "Domestic expenditure",
+      amount: 1000.0,
+      date: new Date(2022, 10, 14),
+    },
+    {
+      title: "Hostel Dues",
+      amount: 200.0,
+      date: new Date(2019, 8, 24),
+    },
+    {
+      title: "Car Expense",
+      amount: 300.0,
+      date: new Date(2021, 5, 19),
+    },
+  ]; 
  return (
    <>
      <h1>Let's get started</h1>
-     <Expenses />
+     <Expenses items={expenses}/>
    </>
  );
 }
