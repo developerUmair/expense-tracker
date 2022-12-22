@@ -1,4 +1,5 @@
-import Expenses from './components/Expenses/Expenses';
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -22,36 +23,16 @@ const App = () => {
       amount: 300.0,
       date: new Date(2021, 5, 19),
     },
-  ]; 
- return (
-   <>
-     <h1>Let's get started</h1>
-     <Expenses items={expenses}/>
-   </>
- );
-}
+  ];
+  return (
+    <>
+      <NewExpense />
+      <Expenses items={expenses} />
+    </>
+  );
+};
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* import ExpenseItem from "./components/ExpenseItem";
 
@@ -89,39 +70,4 @@ function App() {
 
 export default App;
 
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+ */
