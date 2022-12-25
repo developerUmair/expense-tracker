@@ -24,15 +24,43 @@ const App = () => {
       date: new Date(2021, 5, 19),
     },
   ];
+
+  const onAddExpenseHandler = expense => {
+    console.log('In app.js');
+    console.log(expense);
+  }
   return (
     <>
-      <NewExpense />
+      <NewExpense onAddExpense={onAddExpenseHandler} />
       <Expenses items={expenses} />
     </>
   );
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* import ExpenseItem from "./components/ExpenseItem";
 
